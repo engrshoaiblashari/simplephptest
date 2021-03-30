@@ -33,5 +33,5 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run Surge
-        run: surge ./ shoaibtesting.surge.sh
+        run: surge ./ shoaibtesting.surge.sh --token $({secrets.SURGE_TOKEN})
         
